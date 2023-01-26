@@ -28,7 +28,7 @@ def bofrun(bofpath, args):
     bofdata = BeaconPack()
     bofdata.addstr("go")
     bofdata.addstr(boffile)
-    bofdata.addstr("")
+    bofdata.addstr(args)
     
     bofdata_buf = bofdata.getbuffer()
     
