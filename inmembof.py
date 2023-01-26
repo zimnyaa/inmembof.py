@@ -7,7 +7,7 @@ RUNCOFFCALLBACK = WINFUNCTYPE(None, c_char_p, c_int)
 
 @RUNCOFFCALLBACK
 def pycallback(outstr, len_outstr):
-    print(outstr.decode())
+    print(outstr)
 
 RUNCOFFPROC = WINFUNCTYPE(c_int, c_char_p, c_int, RUNCOFFCALLBACK)
 
